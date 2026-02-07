@@ -4,7 +4,8 @@ import techStackReducer from './slice/techStackSlice';
 import mediaReducer from './slice/mediaSlice';
 import projectReducer from './slice/projectSlice';
 import certificateReducer from './slice/certificateSlice'
-import dashboardReducer from './slice/dashboardSlice'
+import dashboardReducer from './slice/dashboardSlice';
+import seoReducer from './slice/seoSlice'
 export const store = configureStore({
   reducer: {
     user: userReducer,
@@ -13,6 +14,7 @@ export const store = configureStore({
     project: projectReducer,
     certificate: certificateReducer,
     dashboard:dashboardReducer,
+    seo: seoReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
